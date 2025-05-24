@@ -1,0 +1,65 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #1e1e1e;
+  color: #a8ff60;
+  font-family: monospace;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1.5rem;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+
+a {
+  color: #5fd7ff;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.prompt {
+  color: #a8ff60;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 1em;
+  background-color: #a8ff60;
+  animation: blink 1s step-start 0s infinite;
+  vertical-align: bottom;
+  margin-left: 5px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+#terminal {
+  white-space: pre-wrap;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 600px) {
+  html,
+  body {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .cursor {
+    width: 8px;
+  }
+}
